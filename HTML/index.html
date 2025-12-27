@@ -1,0 +1,58 @@
+<!-- Save this as index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Famous Graphics</title>
+  <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="brand">
+      <!-- Put your logo file named `logo.png` in the same folder as index.html -->
+      <img src="/IMAGES/IMG_0499.JPG" alt="Famous Graphics logo" class="logo">
+      <span class="site-title">Famous Graphics</span>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="hamburger"></span>
+    </button>
+
+    <nav class="nav" id="main-nav">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Example content so anchor links work when previewing -->
+  <main style="padding:2rem">
+    <section id="home"><h2>Home</h2><p>Welcome to Famous Graphics.</p></section>
+    <section id="about"><h2>About</h2><p>About section</p></section>
+    <section id="services"><h2>Services</h2><p>Services section</p></section>
+    <section id="contact"><h2>Contact</h2><p>Contact section</p></section>
+    <section id="more"> <h2>More</h2> <p>DO you want to know more about me?</p></section>
+  </main>
+
+  <script>
+    // Mobile toggle behaviour
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('main-nav');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true' || false;
+      toggle.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('open');
+    });
+  </script>
+
+  <img src="/IMAGES/IMG_2497.JPG" alt="Image for my site" width="500px" height="550px">
+</body>
+</html>
+
+
