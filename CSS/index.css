@@ -248,7 +248,7 @@
     padding: 40px 20px;
      background-color: #050027;
     align-items: center;
-    content-align: center;
+    align-content: center;
     justify-content: center;
 }
 
