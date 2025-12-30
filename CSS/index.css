@@ -246,7 +246,7 @@
     min-height: 20vh; 
     margin-top: 20px;
     padding: 40px 20px;
-     background-color: #e0e0e0;
+     background-color: #050027;
     align-items: center;
     content-align: center;
     justify-content: center;
@@ -256,7 +256,7 @@
     /* Styling for the heading to make it prominent */
     font-family: 'Montserrat', sans-serif;
     font-size: 60px;
-    color: #00103a;
+    color: #ffee00;
     text-align: center;
     margin: 0;
 }
@@ -265,7 +265,7 @@
     font-size: 20px;
     font-weight: normal;
     font-family: 'Roboto', sans-serif;
-    color: #000000;
+    color: #ffffff;
     text-align: center;
     margin-top: 20px;
     margin: 10px;
