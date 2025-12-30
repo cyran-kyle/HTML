@@ -111,3 +111,73 @@
 .nav-icons i:hover{
     color:yellow
 }
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+}
+
+/* Responsive Design */
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+    .primary-navbar {
+        padding: 10px 20px;
+        flex-wrap: wrap;
+    }
+
+    .primary-navbar h2 {
+        font-size: 24px;
+    }
+
+    .primary-navbar img {
+        height: 40px;
+        width: 40px;
+        margin-left: 10px;
+    }
+
+    .primary-navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #00103a;
+        padding: 10px;
+        display: none;
+    }
+
+    .primary-navbar ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-icons {
+        gap: 10px;
+    }
+
+    .nav-icons i {
+        font-size: 20px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .primary-navbar h2 {
+        font-size: 20px;
+    }
+
+    .primary-navbar ul li a {
+        font-size: 16px;
+    }
+
+    .nav-icons i {
+        font-size: 18px;
+    }
+}
