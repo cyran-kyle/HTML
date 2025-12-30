@@ -55,10 +55,12 @@ html, body{
     border-radius: 50%;
     margin-left: 20px;
 }
-/* Hover effect for site logo */
+/* Site logo transitions */
+.primary-navbar img{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 .primary-navbar img:hover{
-    scale: 1.1;
-    transition: all 0.3s ease;
+    transform: scale(1.1);
 }
 
 
@@ -92,9 +94,7 @@ html, body{
     width: 100%;
     gap:50px;
     /* Background image for hero */
-    background: url(/IMAGES/Artistic\ blurry\ colorful\ wallpaper\ background\ _\ Free\ Photo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url("../IMAGES/Artistic blurry colorful wallpaper background _ Free Photo.jpg") center/cover no-repeat;
     
 }
 
@@ -112,22 +112,23 @@ html, body{
     border-radius: 20px;
 }
 
-/* Hover effect for hero image */
+.hero-section img{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 .hero-section img:hover{
-    scale: 1.05;
+    transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
 }
 
-.hero-section h2{
-    font-family:'Monsterrat', sans-serif;
+.hero-section h1{
+    font-family: 'Montserrat', sans-serif;
     font-size: 50px;
     color:white;
 }
 
 .hero-section p{
     /* Hero paragraph styling */
-    font-family: 'roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     flex-wrap: wrap;
     color:white;
@@ -162,30 +163,33 @@ html, body{
 }
 
 
+.button-s{
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
 .button-s:hover{
     /* Button hover effect */
      background-color: #979797;
-     scale:  1.05;
+     transform:  scale(1.05);
 }
 
-.introbody-2{
-    /* Main body container */
-    height: 100vh;
-}
-
-/* Body Intro Text Section */
-.bodytext{
+.intro-2 h2 {
+    /* Styling for the heading to make it prominent */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    color: #ffee00;
     text-align: center;
-    padding: 30px;
-    margin: 20px;
-    max-width: 100%;
+    margin: 0;
 }
+.intro-2 h3{
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    margin: 10px;
+    padding:20px;
 
-.bodytext h1{
-    /* Heading styling */
-    font-family:  'Monsterrat', sans-serif;
-    font-size: 45px;
-    color: #0a0035;
 }
 
 .bodytext p{
@@ -217,8 +221,11 @@ html, body{
        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.582);
 }
 
+.service-item{
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
 .service-item:hover{
-    scale: 1.1;
+    transform: scale(1.1);
        box-shadow: 0 10px 4px rgba(0, 0, 0, 0.76);
 }
 
@@ -285,7 +292,7 @@ html, body{
     text-align: center;
 }
 .footer p{
-    font-family: 'roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: white;
 }
@@ -318,10 +325,12 @@ html, body{
 }
 
 
+.bottom-body img{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 .bottom-body img:hover{
-    scale: 1.05;
+    transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
 }
 
 .bottom-body p{
@@ -479,11 +488,11 @@ html, body{
         padding: 20px 10px;
     }
 
-    .intro-2 h1 {
+    .intro-2 h2 {
         font-size: 36px;
     }
 
-    .intro-2 h2 {
+    .intro-2 h3 {
         font-size: 16px;
         padding: 10px;
     }
