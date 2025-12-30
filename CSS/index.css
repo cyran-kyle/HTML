@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+html, body{
+    overflow-x: hidden;
+}
+
 /* Primary Navbar Styles */
 .primary-navbar{
     /* Flexbox layout for horizontal alignment */
